@@ -1,5 +1,5 @@
 # cv-generator
-Generates CVs to be exported in PDF format. Made with React hooks, Typescript, and Bootstrap 
+Generates CVs to be exported in PDF format. Made with React hooks and Typescript.
 
 ## Pictures 
 
