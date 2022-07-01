@@ -1,0 +1,541 @@
+:root {
+    --main-bg: #3F4E4F;
+    --non-main-bg: #2C3639;
+    --font-white-color: white;
+    --main-font: 'Inder', sans-serif; 
+    --form-bg: #D9D9D9;
+    --resume-fg: #AAA5A5;
+    --border-color: #AAA5A5;
+    --black-button-bg: #000000;
+    --gray-button-bg: #534D4D;
+    --resume-right-fg: #272121;
+}
+
+html, body , #root {
+    background: var(--non-main-bg);
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    flex-direction: column;
+}
+
+#root * {
+    font-family: var(--main-font);
+}
+
+header {
+    align-items: center;
+    background-color: var(--non-main-bg);
+    display: flex;
+    height: 10%;
+    width: 100%;
+}
+
+header * {
+    color: var(--font-white-color);
+}
+
+header > #title-info-container {
+    align-items: center;
+    display: flex;
+}
+
+#title-info-container > * {
+    margin-left: 2rem;
+}
+
+
+#title-info-container > h1 { 
+    font-size: 3rem;
+}
+
+#title-info-container > p { 
+    font-size: 0.9rem;
+}
+
+#title-info-container > .bar {
+    background-color: white;
+    border-radius: 20px;
+    height: 3.8rem;
+    width: 0.1rem;
+}
+
+main {
+    align-items: center;
+    background-color: var(--main-bg);
+    display: flex;
+    height: 85%;
+    justify-content: center;
+    width: 100%;
+}
+
+main > * {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+main > #form-container {
+    background-color: var(--form-bg);
+    border: 1px solid black;
+    height: 48rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 34rem;
+}
+
+#form-container > #form-top {
+    height: fit-content;
+}
+
+#form-top > #form-top-margin {
+    align-items: flex-end;
+    display: flex;
+    height: 6rem;
+    width: 100%;
+}
+
+#form-top > #form-top-margin > .bar {
+    background-color: var(--main-bg);
+    bottom: 1rem;
+    height: 3.5rem;
+    left: 2rem;
+    position: relative;
+    width: 0.2rem;
+}
+
+#form-top > #form-top-title-info-container {
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    width: 100%;
+}
+
+#form-top > #form-top-title-info-container > * { 
+    left: 3.5rem;
+    margin: 0.8rem 0 0 0;
+    position: relative;
+}
+
+#form-top > #form-top-title-info-container > .bar { 
+    background-color: var(--main-bg);
+    height: 0.2rem;
+    position: relative;
+    width: 6rem;
+}
+
+#form-container > form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+form > section {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+section > label { 
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+section > label {  
+    line-height: 2rem;
+}
+
+section > * {
+    margin-top: 0.7rem;
+}
+
+section label > input { 
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    height: 1.5rem;
+    width: 90%;
+}
+
+section > h2 { 
+    letter-spacing: 0.5rem;
+}
+
+.date-start-end {
+    display: flex;
+    line-height: 2rem;
+}
+
+.date-start-end > * {
+    font-size: 0.8rem;
+    width: 10rem;
+}
+
+.date-start-end input {
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    width: 10rem;
+}
+
+.date-start-end > .end-label {
+    margin-left: 4.5rem;
+}
+
+.add-button {
+    background-color: var(--black-button-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    color: var(--font-white-color);
+    font-size: 0.6rem;
+    height: 1.8rem;
+    letter-spacing: 0.2rem;
+    margin-top: 1rem;
+    width: 8rem;
+}
+
+form > #buttons-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    justify-content: center;
+    margin-top: 3rem;
+    position: relative;
+    width: 80%;
+}
+
+#buttons-container > button {
+    border: 1px solid var(--border-color);
+    border-radius: 15px; 
+    cursor: pointer;
+    font-size: 0.7rem;
+    height: 2rem;
+    letter-spacing: 0.5rem;
+    margin: 1rem;
+    width: 16rem;
+}
+
+button {
+    transition: 100ms;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+#buttons-container > #button-generate-pdf {
+    background-color: var(--black-button-bg);
+    color: var(--font-white-color);
+}
+
+#buttons-container > #reset {
+    background-color: var(--gray-button-bg);
+    color: var(--font-white-color);
+}
+
+main > #resume-a4 {
+    display: flex;
+    height: 29.7cm;
+    transform: scale(0.7);
+    width: 21cm;
+}
+
+#resume-a4 > #resume-left {
+    background-color: var(--resume-fg);
+    height: 29.7cm;
+    width: 6cm;
+}
+
+#resume-left * {
+    color: var(--font-white-color);
+}
+
+#resume-left > .top {
+    height: 38%;
+}
+
+#resume-left > .top > #top-margin { 
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+#top-margin {
+    height: 35%; 
+} 
+
+#top-margin > .bar { 
+    align-items: flex-end;
+    display: flex;
+    height: 100%; 
+    justify-content: center;
+}
+
+#top-margin > .bar > * {
+    margin-bottom: 0.1cm;
+}
+
+#top-margin > .bar {  
+    background-color: var(--gray-button-bg);
+    width: 0.4cm;
+}
+
+#top-margin > p {
+    font-size: 0.35cm;
+    margin-left: 0.8cm;
+}
+
+.top > #name-job-title {
+    justify-content: center;
+    display: flex;
+    height: 65%;    
+    width: 100%;
+}
+
+#name-job-title > #name-job-container {
+    width: 80%;
+}
+
+#name-job-container > h1 {
+    margin-bottom: 0.8cm;
+    font-size: 1.5cm;
+}
+
+#name-job-container > #job-title-container {
+    align-items: center;
+    display: flex;
+}
+
+#job-title-container > .bar {
+    background-color: var(--gray-button-bg);
+    height: 0.15cm;
+    width: 0.9cm;
+}
+
+#job-title-container > p {
+    font-size: 0.4cm;
+    margin-left: 0.4cm;
+}
+
+.left-info-div {
+    display: flex;
+    height: 22%;
+    justify-content: center;
+    margin-bottom: 0.2cm;
+    margin-top: 0.5cm;
+}
+
+.left-info-div  > .left-info-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.left-info-container > h3 {
+    font-size: 0.5cm;
+    letter-spacing: 0.2cm;
+}
+
+.left-info-container > .bar {
+    background-color: var(--gray-button-bg);
+    height: 0.05cm;
+    width: 1.2cm;
+}
+
+.left-info-container > p {
+    font-size: 0.4cm;
+}
+
+.left-info-container > #university-start-end-dates {
+    color: var(--form-bg);
+    font-size: 0.35cm;
+    font-style: oblique;
+}
+
+#skills {
+    height: 32%;
+}
+
+#skills > .left-info-container > ul {
+    margin-left: 0;
+    position: relative;
+    right: 0.7cm;
+    width: 100%;
+}
+
+#skills > .left-info-container > ul > li {
+    font-size: 0.4cm;
+    margin-top: 0.05cm;
+}
+
+#resume-a4 > #resume-right {
+    background-color: var(--font-white-color);
+    height: 29.7cm;
+    width: 15cm;
+}
+
+#resume-right * {
+    color: var(--resume-right-fg);
+}
+
+#resume-right > .top {
+    align-items: flex-end;
+    display: flex;
+    height: 25%;
+}
+
+#resume-right > .top > img {
+    height: 100%;
+}
+
+#resume-right > .top > #contact-info {
+    height: 40%;
+    margin-left: 1cm;
+}
+
+.contact-item {
+    align-items: center;
+    display: flex;
+}
+
+.contact-item > p {
+    font-size: 0.3cm;
+    margin-left: 0.8cm;
+}
+
+#email-item > img {
+    height: 0.4cm;
+}
+
+#phone-item > img {
+    height: 0.4cm;
+}
+
+#website-item > img {
+    height: 0.3cm;
+    margin-left: 0.07cm;
+}
+
+#resume-right > .right-info-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#experience {
+    position: relative;
+    bottom: 0.5cm;
+}
+
+.right-info-div > .right-info-container {
+    width: 90%;
+}
+
+.right-info-div > .right-info-container > h2 {
+    font-size: 0.6cm;
+    letter-spacing: 0.2cm;
+}
+
+.right-info-div > .right-info-container > .bar {
+    background-color: var(--gray-button-bg);
+    height: 0.05cm;
+    position: relative;
+    right: 0.75cm;
+    width: 5cm;
+}
+
+.right-info-div > .right-info-container > p {
+    font-size: 0.35cm;
+    margin-bottom: 0.8cm;
+    margin-top: 0.8cm;
+}
+
+.experience-resume {
+    margin-bottom: 0.8cm;
+    margin-top: 0.8cm;
+    width: 100%;
+}
+
+.experience-resume h4 {
+    font-size: 0.36cm;
+    font-weight: 850;
+    margin: 0.1cm 0.1cm 0.2cm 0;
+}
+
+.experience-resume > .company-info-resume {
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.company-info-resume > * {
+    margin-right: 0.2cm;
+}
+
+.company-info-resume > .bar {
+    background-color: var(--gray-button-bg);
+    height: 0.3cm;
+    margin-bottom: 0.12cm;
+    margin-left: 0.1cm;
+    width: 0.05cm;
+}
+
+.company-info-resume > h4 > .to {
+    font-weight: normal;
+    font-size: 0.35cm;
+}
+
+.experience-resume > p {
+    font-size: 0.35cm;
+    margin-top: 0.1cm;
+}
+
+.experience-resume > ul {
+    bottom: 0.1cm;
+    position: relative;
+}
+
+.experience-resume > ul > li {
+    font-size: 0.35cm;
+}
+
+footer {
+    align-items: center;
+    background-color: var(--non-main-bg);
+    display: flex;
+    height: 5%;
+    justify-content: center;
+    width: 100%;
+}
+
+footer > * {
+    margin-left: 2rem;
+}
+
+footer > p {
+    color: var(--font-white-color);
+    font-size: 0.9rem;
+}
+
+footer > a {
+    height: 2rem;
+    position: relative;
+    right: 0.2rem;
+    top: 0.1rem;
+    width: 2rem;
+}
+
+footer div {
+    transition: 100ms;
+}
+
+footer div:hover {
+    opacity: 0.6;
+}
