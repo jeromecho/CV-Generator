@@ -4,7 +4,7 @@ html2canvas, jsPDF.
 
 ## DEMO
 
-https://user-images.githubusercontent.com/71617542/177023457-81bf3b79-9bc2-4bd3-974c-f43f8dbfd418.mp4
+https://user-images.githubusercontent.com/71617542/177023690-36981bf7-bee0-46f8-ab42-f9f4cf6c4242.mp4
 
 ## Technical Challenges 
 
