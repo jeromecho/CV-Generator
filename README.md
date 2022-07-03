@@ -19,7 +19,17 @@ Therefore, just adding a *useEffect* that called the needed callback with
 dependencies being every single state value that changed in my Experience 
 component was sufficient for my user! 
 
+**Learning Typescript** 
+
+* I scoured a web tutorial, a YouTube tutorial, and the official docs. It took a while for the syntax to sink in, 
+and a little bit of usage for me to realize how nice Typescript by forcing me to write code with standardized 
+signatures built into my functions. For anyone scouring this README, I recommend Ben Awad's 'React Typescript Tutorial', 
+the official docs, and the React section of this typescript deep dive (https://basarat.gitbook.io/typescript/tsx/react). 
+
 ## Reflection 
+
+I typed everything this time for retention, but I finally got Vim-Snippets + Ultinsips working. Combined with LSP configuration, I hope my productivity 
+increases even more. 
 
 
 ### Future Features 
