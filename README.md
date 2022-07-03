@@ -6,7 +6,7 @@ html2canvas, jsPDF.
 
 ## Technical Challenges 
 
-** Migrating to a Function Based Mindset ** 
+**Migrating to a Function Based Mindset** 
 
 * Class *setState* allows for a second argument, a callback that is called 
 after the state updates, preventing wacky interpretations of the async 
