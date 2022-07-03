@@ -162,6 +162,13 @@ section label > input {
     width: 90%;
 }
 
+section label > textarea {
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    height: 4rem;
+    width: 90%;
+}
+
 section > h2 { 
     letter-spacing: 0.5rem;
 }
@@ -240,8 +247,8 @@ button:hover {
 
 main > #resume-a4 {
     display: flex;
-    height: 29.7cm;
-    transform: scale(0.7);
+    min-height: 29.7cm;
+    transform: scale(0.7); 
     width: 21cm;
 }
 
