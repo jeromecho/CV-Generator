@@ -25,6 +25,6 @@ component was sufficient for my user!
 ### Future Features 
 
 * Adding a custom image instead of a handsome Korean man 
-* Responsive font-sizing for long names (my legal name 'Jin' works fine, Jerome is a bit long :unamused:
+* Responsive font-sizing for long names (my legal name 'Jin' works fine, 'Jerome' is a bit long :unamused: ) 
 
 
