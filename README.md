@@ -4,6 +4,8 @@ html2canvas, jsPDF.
 
 ## DEMO
 
+https://user-images.githubusercontent.com/71617542/177023457-81bf3b79-9bc2-4bd3-974c-f43f8dbfd418.mp4
+
 ## Technical Challenges 
 
 **Migrating to a Function Based Mindset** 
